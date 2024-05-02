@@ -13,12 +13,15 @@ app.listen(PORT, () => { console.log('API Running Successfully', `http://localho
 const sendGridMail = require('@sendgrid/mail')
 sendGridMail.setApiKey(process.env.SENDGRID_API_KEY)
 
-app.post('/sendMail', async (req, res) => {
-    const msg = {
-        to: req.body.mail,
-        from: 'info@bcimmigrationconsultants.com',
-        subject: 'Thank you for contacting BC Immigration! You are one step ahead.',
-        html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+app.post('/sendUserMail', async (req, res) => {
+  const msg = {
+    to: req.body.mail,
+    from: {
+      name: 'BC Immigration Consultants',
+      email: 'info@bcimmigrationconsultants.com'
+    },
+    subject: 'Thank you for contacting BC Immigration! You are one step ahead.',
+    html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
         <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en" style="font-family:arial, 'helvetica neue', helvetica, sans-serif">
          <head>
           <meta charset="UTF-8">
@@ -259,17 +262,42 @@ app.post('/sendMail', async (req, res) => {
           </div>
          </body>
         </html>`
-    };
+  };
 
-    try {
-        await sendGridMail.send(msg);
-        res.json({
-            message: "Email sent Successfully!!"
-        });
-    } catch (error) {
-        res.json({
-            message: "Error",
-            error: error
-        });
-    }
+  try {
+    await sendGridMail.send(msg);
+    res.json({
+      message: "Email sent Successfully!!"
+    });
+  } catch (error) {
+    res.json({
+      message: "Error",
+      error: error
+    });
+  }
+});
+
+
+app.post('/contactForm', async (req, res) => {
+  const msg = {
+    to: ['info@bcimmigrationconsultants.com', 'contact@bcimmigrationconsultants.com'],
+    from: {
+      name: 'BC Immigration Consultants',
+      email: 'info@bcimmigrationconsultants.com'
+    },
+    subject: `New Enquiry: ${req.body.name}`,
+    html: ``
+  };
+
+  try {
+    await sendGridMail.send(msg);
+    res.json({
+      message: "Email sent Successfully!!"
+    });
+  } catch (error) {
+    res.json({
+      message: "Error",
+      error: error
+    });
+  }
 });
