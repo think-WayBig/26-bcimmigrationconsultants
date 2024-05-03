@@ -278,26 +278,136 @@ app.post('/sendUserMail', async (req, res) => {
 });
 
 
-app.post('/contactForm', async (req, res) => {
+app.post('/contactNormal', async (req, res) => {
+  let { name, mail, message } = req.body;
+
+  const tableStyles = `
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-family: Arial, sans-serif;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+      }
+      th, td {
+        padding: 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+        font-size: 15px;
+      }
+      th {
+        background-color: #1a5276; /* Dark bluish matter color */
+        color: #fff; /* White text color */
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      tr:hover {
+        background-color: #e9e9e9;
+      }
+    </style>
+  `;
+
+  const tableData = `
+    <table>
+      <tr>
+        <th style="background-color: #1a5276; color: #fff; padding: 15px; font-size: 15px;">Name</th>
+        <td style="padding: 15px; border: 1px solid #ddd; font-size: 15px;">${name}</td>
+      </tr>
+      <tr>
+        <th style="background-color: #1a5276; color: #fff; padding: 15px; font-size: 15px;">Email</th>
+        <td style="padding: 15px; border: 1px solid #ddd; font-size: 15px;">${mail}</td>
+      </tr>
+      <tr>
+        <th style="background-color: #1a5276; color: #fff; padding: 15px; font-size: 15px;">Message</th>
+        <td style="padding: 15px; border: 1px solid #ddd; font-size: 15px;">${message}</td>
+      </tr>
+    </table>
+  `;
+
   const msg = {
-    to: ['info@bcimmigrationconsultants.com', 'contact@bcimmigrationconsultants.com'],
-    from: {
-      name: 'BC Immigration Consultants',
-      email: 'info@bcimmigrationconsultants.com'
-    },
+    to: ['info@bcimmigrationconsultants.com', 'contact@bcimmigrationconsultants.com', 'rspmanas1@gmail.com'],
+    from: { name: 'BC Immigration Consultants', email: 'info@bcimmigrationconsultants.com' },
     subject: `New Enquiry: ${req.body.name}`,
-    html: ``
+    html: `${tableStyles}${tableData}`
   };
 
   try {
     await sendGridMail.send(msg);
-    res.json({
-      message: "Email sent Successfully!!"
-    });
+    res.json({ message: "Email sent Successfully!!" });
   } catch (error) {
-    res.json({
-      message: "Error",
-      error: error
-    });
+    res.json({ message: "Error", error: error });
+  }
+});
+
+app.post('/contactForm', async (req, res) => {
+  let { name, mail, phone, category, message } = req.body;
+
+  const tableStyles = `
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-family: Arial, sans-serif;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+      }
+      th, td {
+        padding: 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+        font-size: 15px;
+      }
+      th {
+        background-color: #1a5276;
+        color: #fff;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      tr:hover {
+        background-color: #e9e9e9;
+      }
+    </style>
+  `;
+
+  const tableData = `
+    <table>
+      <tr>
+        <th style="background-color: #1a5276; color: #fff; padding: 15px; font-size: 15px;">Name</th>
+        <td style="padding: 15px; border: 1px solid #ddd; font-size: 15px;">${name}</td>
+      </tr>
+      <tr>
+        <th style="background-color: #1a5276; color: #fff; padding: 15px; font-size: 15px;">Email</th>
+        <td style="padding: 15px; border: 1px solid #ddd; font-size: 15px;">${mail}</td>
+      </tr>
+      <tr>
+        <th style="background-color: #1a5276; color: #fff; padding: 15px; font-size: 15px;">Phone</th>
+        <td style="padding: 15px; border: 1px solid #ddd; font-size: 15px;">${phone}</td>
+      </tr>
+      <tr>
+        <th style="background-color: #1a5276; color: #fff; padding: 15px; font-size: 15px;">Service</th>
+        <td style="padding: 15px; border: 1px solid #ddd; font-size: 15px;">${category}</td>
+      </tr>
+      <tr>
+        <th style="background-color: #1a5276; color: #fff; padding: 15px; font-size: 15px;">Message</th>
+        <td style="padding: 15px; border: 1px solid #ddd; font-size: 15px;">${message}</td>
+      </tr>
+    </table>
+  `;
+
+  const msg = {
+    to: ['info@bcimmigrationconsultants.com', 'contact@bcimmigrationconsultants.com', 'rspmanas1@gmail.com'],
+    from: { name: 'BC Immigration Consultants', email: 'info@bcimmigrationconsultants.com' },
+    subject: `New Enquiry: ${req.body.name}`,
+    html: `${tableStyles}${tableData}`
+  };
+
+  try {
+    await sendGridMail.send(msg);
+    res.json({ message: "Email sent Successfully!!" });
+  } catch (error) {
+    res.json({ message: "Error", error: error });
   }
 });
