@@ -102,13 +102,13 @@ app.post('/sendUserMail', async (req, res) => {
                           <td align="left" class="es-m-p20b" style="padding:0;Margin:0;width:128px">
                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                              <tr>
-                              <td align="center" style="padding:0;Margin:0;padding-top:10px"><!--[if mso]><a href="https://www.bcimmigrationconsultants.com/theme/contact/" target="_blank" hidden>
-            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="https://www.bcimmigrationconsultants.com/theme/contact/" 
+                              <td align="center" style="padding:0;Margin:0;padding-top:10px"><!--[if mso]><a href="https://www.bcimmigrationconsultants.com/preview/contact/" target="_blank" hidden>
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="https://www.bcimmigrationconsultants.com/preview/contact/" 
                         style="height:39px; v-text-anchor:middle; width:118px" arcsize="13%" stroke="f"  fillcolor="#0b5394">
                 <w:anchorlock></w:anchorlock>
                 <center style='color:#ffffff; font-family:Raleway, Arial, sans-serif; font-size:14px; font-weight:400; line-height:14px;  mso-text-raise:1px'>Contact</center>
             </v:roundrect></a>
-        <![endif]--><!--[if !mso]><!-- --><span class="msohide es-button-border" style="border-style:solid;border-color:#386641;background:#0b5394;border-width:1px;display:inline-block;border-radius:5px;width:auto;mso-hide:all"><a href="https://www.bcimmigrationconsultants.com/theme/contact/" class="es-button" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:16px;display:inline-block;background:#0b5394;border-radius:5px;font-family:Raleway, Arial, sans-serif;font-weight:normal;font-style:normal;line-height:19px;width:auto;text-align:center;padding:10px 30px 10px 30px;mso-padding-alt:0;mso-border-alt:10px solid #0b5394">Contact</a></span><!--<![endif]--></td>
+        <![endif]--><!--[if !mso]><!-- --><span class="msohide es-button-border" style="border-style:solid;border-color:#386641;background:#0b5394;border-width:1px;display:inline-block;border-radius:5px;width:auto;mso-hide:all"><a href="https://www.bcimmigrationconsultants.com/preview/contact/" class="es-button" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:16px;display:inline-block;background:#0b5394;border-radius:5px;font-family:Raleway, Arial, sans-serif;font-weight:normal;font-style:normal;line-height:19px;width:auto;text-align:center;padding:10px 30px 10px 30px;mso-padding-alt:0;mso-border-alt:10px solid #0b5394">Contact</a></span><!--<![endif]--></td>
                              </tr>
                            </table></td>
                          </tr>
@@ -118,13 +118,13 @@ app.post('/sendUserMail', async (req, res) => {
                           <td align="left" style="padding:0;Margin:0;width:131px">
                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                              <tr>
-                              <td align="center" style="padding:0;Margin:0;padding-top:10px"><!--[if mso]><a href="https://www.bcimmigrationconsultants.com/theme/blog/" target="_blank" hidden>
-            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="https://www.bcimmigrationconsultants.com/theme/blog/" 
+                              <td align="center" style="padding:0;Margin:0;padding-top:10px"><!--[if mso]><a href="https://www.bcimmigrationconsultants.com/preview/blog/" target="_blank" hidden>
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="https://www.bcimmigrationconsultants.com/preview/blog/" 
                         style="height:39px; v-text-anchor:middle; width:117px" arcsize="13%" stroke="f"  fillcolor="#0b5394">
                 <w:anchorlock></w:anchorlock>
                 <center style='color:#ffffff; font-family:Raleway, Arial, sans-serif; font-size:14px; font-weight:400; line-height:14px;  mso-text-raise:1px'>More</center>
             </v:roundrect></a>
-        <![endif]--><!--[if !mso]><!-- --><span class="msohide es-button-border" style="border-style:solid;border-color:#386641;background:#0b5394;border-width:1px;display:inline-block;border-radius:5px;width:auto;mso-hide:all"><a href="https://www.bcimmigrationconsultants.com/theme/blog/" class="es-button" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:16px;display:inline-block;background:#0b5394;border-radius:5px;font-family:Raleway, Arial, sans-serif;font-weight:normal;font-style:normal;line-height:19px;width:auto;text-align:center;padding:10px 30px 10px 30px;mso-padding-alt:0;mso-border-alt:10px solid #0b5394">More</a></span><!--<![endif]--></td>
+        <![endif]--><!--[if !mso]><!-- --><span class="msohide es-button-border" style="border-style:solid;border-color:#386641;background:#0b5394;border-width:1px;display:inline-block;border-radius:5px;width:auto;mso-hide:all"><a href="https://www.bcimmigrationconsultants.com/preview/blog/" class="es-button" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:16px;display:inline-block;background:#0b5394;border-radius:5px;font-family:Raleway, Arial, sans-serif;font-weight:normal;font-style:normal;line-height:19px;width:auto;text-align:center;padding:10px 30px 10px 30px;mso-padding-alt:0;mso-border-alt:10px solid #0b5394">More</a></span><!--<![endif]--></td>
                              </tr>
                            </table></td>
                          </tr>
