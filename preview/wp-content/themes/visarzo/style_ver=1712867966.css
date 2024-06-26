@@ -2051,7 +2051,7 @@ div#mCSB_1_container{
 
 .about-section{
   position: relative;
-  padding: 110px 0px 415px 0px;
+  padding: 110px 0px 455px 0px;
   margin-bottom: -246px;
 }
 
@@ -2105,8 +2105,8 @@ div#mCSB_1_container{
 
 #image_block_1 .image-box .box{
   position: absolute;
-  bottom: -70px;
-  width: calc(100% - 160px);
+  bottom: -90px;
+  width: calc(100% - 200px);
   left: 80px;
   background: #fff;
   padding: 10px;
