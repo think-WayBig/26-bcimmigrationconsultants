@@ -534,28 +534,125 @@
 		<div class="layer layer-two"><span class="overlay"></span></div>
 		<div class="layer layer-three"><span class="overlay"></span></div>
 	</div>
-	<div id="search-popup" class="search-popup">
-		<div class="close-search">
-			<span>
-				Close </span>
-		</div>
-		<div class="popup-inner">
-			<div class="overlay-layer"></div>
-			<div class="search-form">
-				<form role="search" method="get" action="https://9FDdIaXv7zCL.com/">
-					<div class="form-group">
-						<fieldset>
-							<input type="search" id="search-form-66184a7ed9083" class="search-field form-control"
-								placeholder="Search" value="" name="s" required="required">
-							<button class="theme-btn style-four submit-btn-ri-fat" type="submit">
-								search now </button>
-						</fieldset>
-					</div>
-				</form>
+	<style>
+		.top-bar {
+			width: 100%;
+			background-color: black;
+			padding: 5px 0;
+			zoom: 0.8;
+			overflow: hidden;
+			white-space: nowrap;
+			position: relative;
+		}
+
+		.flag-container {
+			display: flex;
+			white-space: nowrap;
+			animation: scroll 40s linear infinite;
+		}
+
+		.flag-strip {
+			display: flex;
+		}
+
+		.flag-strip img {
+			height: 30px;
+			margin: 0 10px;
+		}
+
+		@keyframes scroll {
+			0% {
+				transform: translateX(0%);
+			}
+
+			50% {
+				transform: translateX(-50%);
+			}
+
+			100% {
+				transform: translateX(0%);
+			}
+		}
+	</style>
+	<div class="top-bar">
+		<div class="flag-container">
+			<div class="flag-strip">
+				<img src="https://flagcdn.com/w40/us.png" alt="USA">
+				<img src="https://flagcdn.com/w40/ca.png" alt="Canada">
+				<img src="https://flagcdn.com/w40/de.png" alt="Germany">
+				<img src="https://flagcdn.com/w40/fr.png" alt="France">
+				<img src="https://flagcdn.com/w40/gb.png" alt="United Kingdom">
+				<img src="https://flagcdn.com/w40/in.png" alt="India">
+				<img src="https://flagcdn.com/w40/jp.png" alt="Japan">
+				<img src="https://flagcdn.com/w40/au.png" alt="Australia">
+				<img src="https://flagcdn.com/w40/br.png" alt="Brazil">
+				<img src="https://flagcdn.com/w40/za.png" alt="South Africa">
+				<img src="https://flagcdn.com/w40/ru.png" alt="Russia">
+				<img src="https://flagcdn.com/w40/cn.png" alt="China">
+				<img src="https://flagcdn.com/w40/es.png" alt="Spain">
+				<img src="https://flagcdn.com/w40/it.png" alt="Italy">
+				<img src="https://flagcdn.com/w40/mx.png" alt="Mexico">
+				<img src="https://flagcdn.com/w40/kr.png" alt="South Korea">
+				<img src="https://flagcdn.com/w40/ng.png" alt="Nigeria">
+				<img src="https://flagcdn.com/w40/ar.png" alt="Argentina">
+				<img src="https://flagcdn.com/w40/eg.png" alt="Egypt">
+				<img src="https://flagcdn.com/w40/sa.png" alt="Saudi Arabia">
+				<img src="https://flagcdn.com/w40/se.png" alt="Sweden">
+				<img src="https://flagcdn.com/w40/ch.png" alt="Switzerland">
+				<img src="https://flagcdn.com/w40/nl.png" alt="Netherlands">
+				<img src="https://flagcdn.com/w40/sg.png" alt="Singapore">
+				<img src="https://flagcdn.com/w40/my.png" alt="Malaysia">
+				<img src="https://flagcdn.com/w40/th.png" alt="Thailand">
+				<img src="https://flagcdn.com/w40/ph.png" alt="Philippines">
+				<img src="https://flagcdn.com/w40/nz.png" alt="New Zealand">
+				<img src="https://flagcdn.com/w40/ke.png" alt="Kenya">
+				<img src="https://flagcdn.com/w40/gh.png" alt="Ghana">
+				<img src="https://flagcdn.com/w40/vn.png" alt="Vietnam">
+				<img src="https://flagcdn.com/w40/id.png" alt="Indonesia">
+				<img src="https://flagcdn.com/w40/no.png" alt="Norway">
+				<img src="https://flagcdn.com/w40/dk.png" alt="Denmark">
+				<img src="https://flagcdn.com/w40/fi.png" alt="Finland">
+				<img src="https://flagcdn.com/w40/ie.png" alt="Ireland">
+				<img src="https://flagcdn.com/w40/us.png" alt="USA">
+				<img src="https://flagcdn.com/w40/ca.png" alt="Canada">
+				<img src="https://flagcdn.com/w40/de.png" alt="Germany">
+				<img src="https://flagcdn.com/w40/fr.png" alt="France">
+				<img src="https://flagcdn.com/w40/gb.png" alt="United Kingdom">
+				<img src="https://flagcdn.com/w40/in.png" alt="India">
+				<img src="https://flagcdn.com/w40/jp.png" alt="Japan">
+				<img src="https://flagcdn.com/w40/au.png" alt="Australia">
+				<img src="https://flagcdn.com/w40/br.png" alt="Brazil">
+				<img src="https://flagcdn.com/w40/za.png" alt="South Africa">
+				<img src="https://flagcdn.com/w40/ru.png" alt="Russia">
+				<img src="https://flagcdn.com/w40/cn.png" alt="China">
+				<img src="https://flagcdn.com/w40/es.png" alt="Spain">
+				<img src="https://flagcdn.com/w40/it.png" alt="Italy">
+				<img src="https://flagcdn.com/w40/mx.png" alt="Mexico">
+				<img src="https://flagcdn.com/w40/kr.png" alt="South Korea">
+				<img src="https://flagcdn.com/w40/ng.png" alt="Nigeria">
+				<img src="https://flagcdn.com/w40/ar.png" alt="Argentina">
+				<img src="https://flagcdn.com/w40/eg.png" alt="Egypt">
+				<img src="https://flagcdn.com/w40/sa.png" alt="Saudi Arabia">
+				<img src="https://flagcdn.com/w40/se.png" alt="Sweden">
+				<img src="https://flagcdn.com/w40/ch.png" alt="Switzerland">
+				<img src="https://flagcdn.com/w40/nl.png" alt="Netherlands">
+				<img src="https://flagcdn.com/w40/sg.png" alt="Singapore">
+				<img src="https://flagcdn.com/w40/my.png" alt="Malaysia">
+				<img src="https://flagcdn.com/w40/th.png" alt="Thailand">
+				<img src="https://flagcdn.com/w40/ph.png" alt="Philippines">
+				<img src="https://flagcdn.com/w40/nz.png" alt="New Zealand">
+				<img src="https://flagcdn.com/w40/ke.png" alt="Kenya">
+				<img src="https://flagcdn.com/w40/gh.png" alt="Ghana">
+				<img src="https://flagcdn.com/w40/vn.png" alt="Vietnam">
+				<img src="https://flagcdn.com/w40/id.png" alt="Indonesia">
+				<img src="https://flagcdn.com/w40/no.png" alt="Norway">
+				<img src="https://flagcdn.com/w40/dk.png" alt="Denmark">
+				<img src="https://flagcdn.com/w40/fi.png" alt="Finland">
+				<img src="https://flagcdn.com/w40/ie.png" alt="Ireland">
 			</div>
 		</div>
 	</div>
-	<header class="main-header  style-one">
+	<header class="main-header style-one">
 		<style>
 			@media (max-width: 992px) {
 				.header-top {
@@ -665,6 +762,84 @@
 			</div>
 		</div>
 		<div class="sticky-header sty-btn-">
+			<div class="top-bar">
+				<div class="flag-container">
+					<div class="flag-strip">
+						<img src="https://flagcdn.com/w40/us.png" alt="USA">
+						<img src="https://flagcdn.com/w40/ca.png" alt="Canada">
+						<img src="https://flagcdn.com/w40/de.png" alt="Germany">
+						<img src="https://flagcdn.com/w40/fr.png" alt="France">
+						<img src="https://flagcdn.com/w40/gb.png" alt="United Kingdom">
+						<img src="https://flagcdn.com/w40/in.png" alt="India">
+						<img src="https://flagcdn.com/w40/jp.png" alt="Japan">
+						<img src="https://flagcdn.com/w40/au.png" alt="Australia">
+						<img src="https://flagcdn.com/w40/br.png" alt="Brazil">
+						<img src="https://flagcdn.com/w40/za.png" alt="South Africa">
+						<img src="https://flagcdn.com/w40/ru.png" alt="Russia">
+						<img src="https://flagcdn.com/w40/cn.png" alt="China">
+						<img src="https://flagcdn.com/w40/es.png" alt="Spain">
+						<img src="https://flagcdn.com/w40/it.png" alt="Italy">
+						<img src="https://flagcdn.com/w40/mx.png" alt="Mexico">
+						<img src="https://flagcdn.com/w40/kr.png" alt="South Korea">
+						<img src="https://flagcdn.com/w40/ng.png" alt="Nigeria">
+						<img src="https://flagcdn.com/w40/ar.png" alt="Argentina">
+						<img src="https://flagcdn.com/w40/eg.png" alt="Egypt">
+						<img src="https://flagcdn.com/w40/sa.png" alt="Saudi Arabia">
+						<img src="https://flagcdn.com/w40/se.png" alt="Sweden">
+						<img src="https://flagcdn.com/w40/ch.png" alt="Switzerland">
+						<img src="https://flagcdn.com/w40/nl.png" alt="Netherlands">
+						<img src="https://flagcdn.com/w40/sg.png" alt="Singapore">
+						<img src="https://flagcdn.com/w40/my.png" alt="Malaysia">
+						<img src="https://flagcdn.com/w40/th.png" alt="Thailand">
+						<img src="https://flagcdn.com/w40/ph.png" alt="Philippines">
+						<img src="https://flagcdn.com/w40/nz.png" alt="New Zealand">
+						<img src="https://flagcdn.com/w40/ke.png" alt="Kenya">
+						<img src="https://flagcdn.com/w40/gh.png" alt="Ghana">
+						<img src="https://flagcdn.com/w40/vn.png" alt="Vietnam">
+						<img src="https://flagcdn.com/w40/id.png" alt="Indonesia">
+						<img src="https://flagcdn.com/w40/no.png" alt="Norway">
+						<img src="https://flagcdn.com/w40/dk.png" alt="Denmark">
+						<img src="https://flagcdn.com/w40/fi.png" alt="Finland">
+						<img src="https://flagcdn.com/w40/ie.png" alt="Ireland">
+						<img src="https://flagcdn.com/w40/us.png" alt="USA">
+						<img src="https://flagcdn.com/w40/ca.png" alt="Canada">
+						<img src="https://flagcdn.com/w40/de.png" alt="Germany">
+						<img src="https://flagcdn.com/w40/fr.png" alt="France">
+						<img src="https://flagcdn.com/w40/gb.png" alt="United Kingdom">
+						<img src="https://flagcdn.com/w40/in.png" alt="India">
+						<img src="https://flagcdn.com/w40/jp.png" alt="Japan">
+						<img src="https://flagcdn.com/w40/au.png" alt="Australia">
+						<img src="https://flagcdn.com/w40/br.png" alt="Brazil">
+						<img src="https://flagcdn.com/w40/za.png" alt="South Africa">
+						<img src="https://flagcdn.com/w40/ru.png" alt="Russia">
+						<img src="https://flagcdn.com/w40/cn.png" alt="China">
+						<img src="https://flagcdn.com/w40/es.png" alt="Spain">
+						<img src="https://flagcdn.com/w40/it.png" alt="Italy">
+						<img src="https://flagcdn.com/w40/mx.png" alt="Mexico">
+						<img src="https://flagcdn.com/w40/kr.png" alt="South Korea">
+						<img src="https://flagcdn.com/w40/ng.png" alt="Nigeria">
+						<img src="https://flagcdn.com/w40/ar.png" alt="Argentina">
+						<img src="https://flagcdn.com/w40/eg.png" alt="Egypt">
+						<img src="https://flagcdn.com/w40/sa.png" alt="Saudi Arabia">
+						<img src="https://flagcdn.com/w40/se.png" alt="Sweden">
+						<img src="https://flagcdn.com/w40/ch.png" alt="Switzerland">
+						<img src="https://flagcdn.com/w40/nl.png" alt="Netherlands">
+						<img src="https://flagcdn.com/w40/sg.png" alt="Singapore">
+						<img src="https://flagcdn.com/w40/my.png" alt="Malaysia">
+						<img src="https://flagcdn.com/w40/th.png" alt="Thailand">
+						<img src="https://flagcdn.com/w40/ph.png" alt="Philippines">
+						<img src="https://flagcdn.com/w40/nz.png" alt="New Zealand">
+						<img src="https://flagcdn.com/w40/ke.png" alt="Kenya">
+						<img src="https://flagcdn.com/w40/gh.png" alt="Ghana">
+						<img src="https://flagcdn.com/w40/vn.png" alt="Vietnam">
+						<img src="https://flagcdn.com/w40/id.png" alt="Indonesia">
+						<img src="https://flagcdn.com/w40/no.png" alt="Norway">
+						<img src="https://flagcdn.com/w40/dk.png" alt="Denmark">
+						<img src="https://flagcdn.com/w40/fi.png" alt="Finland">
+						<img src="https://flagcdn.com/w40/ie.png" alt="Ireland">
+					</div>
+				</div>
+			</div>
 			<div class="auto-container">
 				<div class="outer-box clearfix">
 					<div class="logo-box pull-left">
@@ -1069,10 +1244,10 @@
 														<i aria-hidden="true" class=" flaticon-manager"></i>
 													</div>
 													<span>visa types</span>
-													<h3><a href="./services/">Working
+													<h3><a href="./services/">Work
 															Visa</a></h3>
 													<p>Unlock career opportunities in Canada and the USA with our
-														Working Visa solutions. Seamlessly transition to your dream job.
+														Work Visa solutions. Seamlessly transition to your dream job.
 													</p>
 													<div class="link"><a href="./services/" rel="nofollow"><i
 																class="flaticon-send"></i></a></div>
@@ -1854,8 +2029,7 @@
 																</p>
 																<ul></ul>
 															</div>
-															<form
-																class="wpcf7-form init">
+															<form class="wpcf7-form init">
 																<div style="display: none;">
 																	<input type="hidden" name="_wpcf7" value="112">
 																	<input type="hidden" name="_wpcf7_version"
@@ -2378,9 +2552,101 @@
 		var year = new Date();
 		document.getElementById('year').innerHTML = year.getFullYear();
 	</script>
-	<button class="scroll-top scroll-to-target" data-target="html">
-		<i class="fa fa-arrow-up"></i>
-	</button>
+
+	<style>
+		.back-to-top {
+			position: fixed;
+			/* display: none; */
+			right: 30px;
+			bottom: 30px;
+			z-index: 100;
+		}
+
+		.back-to-top img {
+			width: 60px;
+			border-radius: 7px;
+		}
+
+		#wa-box {
+			z-index: 1000;
+		}
+
+		.wa-float {
+			width: 200px;
+			background-color: white;
+			position: fixed;
+			bottom: 20px;
+			right: 100px;
+			border-radius: 10px;
+			border: 1px solid #196a33;
+			padding: 10px;
+			padding-top: 0;
+		}
+
+		.wa-float a {
+			color: #196a33;
+		}
+
+		.wa-float .bi-x {
+			color: #196a33;
+			display: flex;
+			justify-content: right;
+			font-size: 22px;
+			transition: 0.3s;
+			height: 20px;
+		}
+
+		.wa-float .bi-x:hover {
+			transform: translateY(-2px);
+		}
+
+		.wa-disappear {
+			animation: 0.5s linear fadeOut;
+		}
+
+		@keyframes fadeOut {
+			0% {
+				opacity: 1;
+			}
+
+			100% {
+				opacity: 0;
+			}
+		}
+
+		@media (max-width: 468px) {
+			.back-to-top {
+				zoom: 0.85;
+			}
+		}
+	</style>
+
+	<script>
+		function closeWA() {
+			document.getElementById("wa-box").classList.add("wa-disappear");
+			setTimeout(() => {
+				document.getElementById("wa-box").style.display = "none";
+			}, 500);
+		}
+	</script>
+
+	<!-- Back to Top -->
+	<a href="https://wa.me/919915493291?text=Hey!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+		class="back-to-top">
+		<img src="./wp-content/uploads/2020/07/whatsapp-bc-immigration-amritsar.png" alt="aleco-whatsapp" />
+	</a>
+	<div id="wa-box" class="wa-float back-to-top">
+		<i style="display: flex; flex-direction: row-reverse;position: relative;top: 10px;"
+			class="flaticon-close-cross">
+			<img onclick="closeWA()" style="cursor: pointer; width: 18px;"
+				src="https://cdn-icons-png.flaticon.com/512/9312/9312232.png">
+		</i>
+		<p>Let's chat about your dream project!</p>
+		<a href="https://wa.me/919915493291?text=Hey!%20I%20would%20like%20to%20know%20more%20about%20your%20services.">
+			Chat Now
+		</a>
+	</div>
+
 	<link rel="stylesheet" id="elementor-post-780-css"
 		href="wp-content/uploads/elementor/css/post-780_ver%3D1700144810.css" type="text/css" media="all">
 	<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
