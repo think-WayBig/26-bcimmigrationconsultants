@@ -1022,28 +1022,29 @@
 			</div>
 		</section>
 		<section
-			class="elementor-section elementor-top-section elementor-element elementor-element-e6f5d1a elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-			data-id="e6f5d1a" data-element_type="section" data-settings="{" stretch_section":"section-stretched"}"="">
+			class="elementor-section elementor-top-section elementor-element elementor-element-e3183e3 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+			data-id="e3183e3" data-element_type="section"
+			data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
 			<div class="elementor-container elementor-column-gap-no">
-				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-609cd3b"
-					data-id="609cd3b" data-element_type="column">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5f366df"
+					data-id="5f366df" data-element_type="column">
 					<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-8fdfb21 elementor-widget elementor-widget-visarzo_inquiry"
-							data-id="8fdfb21" data-element_type="widget" data-widget_type="visarzo_inquiry.default">
+						<div class="elementor-element elementor-element-b1db481 elementor-widget elementor-widget-visarzo_inquiry"
+							data-id="b1db481" data-element_type="widget" data-widget_type="visarzo_inquiry.default">
 							<div class="elementor-widget-container">
 
 								<section class="inquiry-section bg-color-1">
-									<div class="pattern-layer" style="background-image: url(images/pattern-4.png);">
-									</div>
+									<div class="pattern-layer"
+										style="background-image: url(wp-content/uploads/2020/07/pattern-4.png);"></div>
 									<div class="auto-container">
 										<div class="row align-items-center clearfix">
 											<div class="col-lg-6 col-md-12 col-sm-12 inner-column">
 												<div class="inner-box">
 													<h4>Get Free Assessment Today!</h4>
-													<h2 class="inquire">Fell Free To Enquire About <br>Any Questions You
+													<h2 class="inquire">Feel Free To Enquire About <br>Any Questions You
 														Got</h2>
 													<div class="elementor-shortcode visarzocore-inquire_contact_cf7-0">
-														<div class="wpcf7 no-js" id="wpcf7-f112-p448-o1" lang="en-US"
+														<div class="wpcf7 no-js" id="wpcf7-f112-p7-o1" lang="en-US"
 															dir="ltr">
 															<div class="screen-reader-response">
 																<p role="status" aria-live="polite" aria-atomic="true">
@@ -1058,9 +1059,9 @@
 																	<input type="hidden" name="_wpcf7_locale"
 																		value="en_US">
 																	<input type="hidden" name="_wpcf7_unit_tag"
-																		value="wpcf7-f112-p448-o1">
+																		value="wpcf7-f112-p7-o1">
 																	<input type="hidden" name="_wpcf7_container_post"
-																		value="448">
+																		value="7">
 																	<input type="hidden" name="_wpcf7_posted_data_hash"
 																		value="">
 																</div>
@@ -1069,9 +1070,9 @@
 																			data-name="your-name"><input size="40"
 																				class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
 																				aria-required="true"
-																				aria-invalid="false"
+																				aria-invalid="false" id="name"
 																				placeholder="Full Name" value=""
-																				type="text" id="name" name="your-name"></span>
+																				type="text" name="your-name"></span>
 																	</p>
 																</div>
 																<div class="form-group">
@@ -1079,9 +1080,9 @@
 																			data-name="your-email"><input size="40"
 																				class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
 																				aria-required="true"
-																				aria-invalid="false"
+																				aria-invalid="false" id="mail"
 																				placeholder="Email address" value=""
-																				type="email" id="mail" name="your-email"></span>
+																				type="email" name="your-email"></span>
 																	</p>
 																</div>
 																<div class="form-group">
@@ -1089,14 +1090,14 @@
 																			data-name="message"><textarea cols="40"
 																				rows="10"
 																				class="wpcf7-form-control wpcf7-textarea"
-																				aria-invalid="false"
-																				id="message"
+																				aria-invalid="false" id="message"
 																				placeholder="Message"
 																				name="message"></textarea></span>
 																	</p>
 																</div>
 																<div class="form-group">
-																	<p><button id="send" class="theme-btn-two"><i
+																	<p><button type="submit" id="send"
+																			class="theme-btn-two"><i
 																				class="flaticon-send"></i>Send
 																			Message</button>
 																	</p>
@@ -1112,7 +1113,6 @@
 											<!--========= Send Normal Message =========-->
 											<script>
 												document.getElementById('send').addEventListener('click', async function (event) {
-													console.log("hello");
 													event.preventDefault();
 
 													// Get form data
@@ -1142,7 +1142,6 @@
 													} catch (error) {
 														console.error('Error:', error);
 														alert("Error sending message. Please try again later.");
-														return;
 													}
 
 													try {
@@ -1193,15 +1192,21 @@
 														<li>
 															<i aria-hidden="true" class=" flaticon-call"></i>
 															<p>Any Questions? Call us</p>
-															<h3><a href="tel:12463330079" rel="nofollow">+1 (246) 333
-																	0079</a></h3>
+															<h3><a href="callto:9915493291" rel="nofollow">+91
+																	99154-93291</a></h3>
 														</li>
 														<li>
+															<style>
+																@media (max-width: 550px) {
+																	.email-font {
+																		font-size: 17px;
+																	}
+																}
+															</style>
 															<i aria-hidden="true" class=" flaticon-email"></i>
 															<p>Any Questions? Email us</p>
-															<h3><a href="/cdn-cgi/l/email-protection#6d04031c18041f142d08150c001d0108430e0200"
-																	rel="nofollow"><span class="__cf_email__"
-																		data-cfemail="92fbfce3e7fbe0ebd2f7eaf3ffe2fef7bcf1fdff">[email�&nbsp;protected]</span></a>
+															<h3><a class="email-font" href="mailto:contact@bcimmigrationconsultants.com"
+																	rel="nofollow">contact@bcimmigrationconsultants.com</a>
 															</h3>
 														</li>
 													</ul>
